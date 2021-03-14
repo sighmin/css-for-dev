@@ -1,0 +1,86 @@
+/* global variables */
+:root {
+  --color-green: hsl(160, 100%, 30%);
+  --color-dark-grey: hsl(0, 0%, 40%);
+  --color-grey: hsl(0, 0%, 60%);
+  --color-mustard: hsl(45, 100%, 50%);
+  --color-dark-mustard: hsl(45, 100%, 40%);;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/*
+ * utils and common
+ */
+
+.max-width-wrapper {
+  max-width: 600px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+strong {
+  color: var(--color-green);
+}
+
+p {
+  line-height: 1.5;
+}
+
+/*
+ * header section
+ */
+
+header {
+  border-block-end: 5px solid var(--color-dark-grey);
+  padding-block-end: 30px;
+}
+
+.intro-chunk {
+  max-width: 300px;
+  margin-block-start: 100px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+}
+
+.intro-chunk .title {
+  margin-block-end: 50px;
+}
+
+/*
+ * main section
+ */
+
+main {
+  background-color: var(--color-grey);
+  padding-block-start: 60px;
+  min-height: 100%;
+}
+
+.card {
+  border-block-end: 5px solid var(--color-dark-grey);
+  padding-block-start: 7px;
+  padding-block-end: 5px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  background-color: white;
+}
+
+.card h2 {
+  width: fit-content;
+  padding: 15px 35px;
+  border-block-end: 5px solid var(--color-dark-mustard);
+  margin-inline-start: -35px;
+  margin-block-start: 0px;
+  background-color: var(--color-mustard);
+}

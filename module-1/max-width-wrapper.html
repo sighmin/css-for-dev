@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>Max Width Wrapper Exercise</title>
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script type="text/babel">
+    const MaxWidthWrapper = ({ maxWidth, padding, children }) => (
+      <div style={{
+        maxWidth,
+        marginInlineStart: "auto",
+        marginInlineEnd: "auto",
+        paddingInlineStart: padding || "20px",
+        paddingInlineEnd: padding || "20px"
+      }}>
+        {children}
+      </div>
+    );
+    const App1 = () => (
+      <MaxWidthWrapper maxWidth={"300px"}>
+        <div style={{textAlign: "center"}}>
+          <h1>Hello world!</h1>
+        </div>
+      </MaxWidthWrapper>
+    );
+    const domContainer = document.querySelector('#app');
+    ReactDOM.render(<App1/>, domContainer);
+  </script>
+</head>
+<body>
+  <div id="app"/>
+</body>
+</html>
